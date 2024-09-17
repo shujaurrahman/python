@@ -87,3 +87,91 @@
 
 # max_num = max(a, b, c)
 # print(f"The maximum number is: {max_num}")
+
+
+# Program to find the distance between two points on an x-y plane:
+
+# import math
+
+# x1,y1=map(int,input("Enter first coordinates: ").split(","))
+# x2,y2=map(int,input("Enter second coordinates: ").split(","))
+
+# distance=math.sqrt((x2-x1)**2+(y2-y1)**2)
+
+# print(f"result {distance}")
+
+
+# Program to compute the factorial of an integer:
+
+# def fact(n):
+#     if n==0 or n==1:
+#         return 1
+#     else:
+#         return n*fact(n-1)
+    
+# n=int(input("Enter a number : "))
+# f=fact(n)
+# print(f"result:  {f}")
+
+
+# Program to check whether an integer is prime:
+
+# def is_prime(n):
+#     if n<2:
+#         return False
+#     for i in range(2,int(n**0.5)+1):
+#         if n%i==0:
+#             return False
+#     return True
+    
+
+
+# x=int(input("Enter a number : "))
+
+# if is_prime(x):
+#     print("Prime ")
+# else:
+#     print("Not prime")
+
+
+# Program to find prime numbers between two numbers:
+
+# def is_prime(n):
+#     if n<2:
+#         return False
+#     for i in range(2,int(n**0.5)+1):
+#         if n%i==0:
+#             return False
+#     return True
+
+# start=int(input("Enter starting number: "))
+# end=int(input("Enter starting number: "))
+
+# for i in range(start,end):
+#     if is_prime(i):
+#         print(i)
+    
+
+# Python function to calculate the sum of digits of a given integer:
+
+# def sum_digit(n):
+#     return sum(int(digit) for digit in str(n))
+
+# n=int(input("Enter a number: "))
+# print(f"result : {sum_digit(n)}")
+
+
+# Function to add arbitrary integers:
+
+# def add(*arg):
+#     return sum(arg)
+
+# n=int(input("how many numbers: "))
+# # list=[]
+# # for i in range(n):
+# #     x=int(input("Enter numner: "))
+# #     list.append(x)
+
+# list=[int(input(f"Enter number {i+1}")) for i in range(n)]
+# print(f"result : {add(*list)}")
+
