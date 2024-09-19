@@ -175,3 +175,176 @@
 # list=[int(input(f"Enter number {i+1}")) for i in range(n)]
 # print(f"result : {add(*list)}")
 
+# Program to check whether a string is a palindrome or not:
+
+# def is_palindrome(str):
+#     return str==str[::-1]
+
+# s=input("enter str: ")
+
+# if is_palindrome(s):
+#     print("plaindrome")
+
+# Program to delete 'e' from the end of a string and add 'en':
+
+
+# def modify_string(s):
+#     if len(s)<3:
+#         return s
+#     if s.endswith('e'):
+#         s=s[:-1]
+#     return s+'en'
+
+# s=input("enter a str: ")
+# print(f"result: {modify_string(s)}")
+
+
+# Program to create two separate lists for strings and integers from a mixed list:
+
+# def sep_list(list):
+#     interges=[x for x in list if isinstance(x,int)]
+#     strings=[x for x in list if isinstance(x,str)]
+#     return strings,interges
+
+# list=["shuja",10,"shadab",20]
+
+# s,i=sep_list(list)
+
+# print(s)
+# print(i)
+
+
+# Program to sort words in alphabetical order:
+
+# def sort_Word(s):
+#     words=s.split()
+#     words.sort()
+#     return ' '.join(words)
+
+# string=input("Enter a sentence: ")
+# print(sort_Word(string))
+
+# Program to transfer even and odd integers into two different lists:
+
+
+# def sep_list(list):
+#     even=[x for x in list if x%2==0]
+#     odd=[x for x in list if x%2!=0]
+#     return even,odd
+
+# list=[2,3,4,5,6,70]
+
+# print(sep_list(list))
+
+# Program to find the second largest number in a list and its index:
+
+# def second_largest(lst):
+#     l=list(set(lst))
+#     l.sort()
+#     sl=l[-2]
+#     indices=[i for i,x in enumerate(lst) if x==sl]
+#     return sl,indices
+
+# numbers=[int(input(f"Enter number: {i+1} ")) for i in range(5)]
+# print(second_largest(numbers))
+
+# Create a list of tuples with the first element as the number and second as its square:
+
+# def tupleslist(n):
+#     return [(i,i**2) for i in range(1,n+1)]
+
+# n=int(input("enter range: "))
+
+# print(tupleslist(n))
+
+
+# Program to find the element occurring an odd number of times in a list:
+
+# def odd_times(lst):
+#     for i in lst:
+#         if lst.count(i)%2!=0:
+#             return i
+        
+# l=[1,2,2,2,1]
+
+# print(odd_times(l))
+
+
+# def max_term(lst):
+#     return max(len(i) for i in lst)
+
+# l=["shuja","yusuf","shadab"]
+# print(max_term(l))
+
+# Program to find the repeated items of a tuple:
+
+# def repeated_tpl(l):
+#     ri=set([x for x in l if l.count(x)>1])
+#     return ri
+
+# l=(1,12,2,1,2,3,3,)
+
+# print(repeated_tpl(l))
+
+# index postion
+
+# l=[1,2,1,3,4]
+# print(l.index(3),l.count(1))
+
+# Program to count the words in a line of text:
+# def count_words(line):
+#     words=line.split()
+#     return len(words)
+
+# s=input("Enter a line: ")
+# print(count_words(s))
+
+# Program to count the number of sentences, words, and the word with maximum occurrence:
+
+# import re
+
+# def analyse_text(text):
+#     sentences=re.split(r'[!.?]',text)
+#     num_sen=len([s for s in sentences if s.strip()])
+
+#     words=re.findall(r'\w+',text.lower())
+#     num_words=len(words)
+
+#     word_counts={}
+#     for word in words:
+#         word_counts[word]=word_counts.get(word,0)+1
+
+#     most_common_word=max(word_counts,key=word_counts.get)
+#     max_occurence=word_counts[most_common_word]
+
+#     return num_sen,num_words,max_occurence
+
+# string=input("Enter text to analyse= ")
+# s,w,o=analyse_text(string)
+
+# print(f"result: {s,w,o}")
+
+
+# Program to count frequency of each character in a line of text:
+
+
+# def freq_char(text):
+#     cf={}
+
+#     for char in text:
+        
+#         if char in cf:
+#             cf[char]+=1
+#         elif char==' ':
+#             continue
+#         else:
+#             cf[char]=1
+    
+
+#     return cf
+
+# t=input("Enter the text: ")
+
+# d=freq_char(t)
+
+# print("Freq is ",d)
