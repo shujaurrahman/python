@@ -348,3 +348,71 @@
 # d=freq_char(t)
 
 # print("Freq is ",d)
+
+
+# Program to find the character with the maximum count in a line of text:
+
+# def freq_char(text):
+#     cf={}
+
+#     for char in text:
+        
+#         if char in cf:
+#             cf[char]+=1
+#         elif char==' ':
+#             continue
+#         else:
+#             cf[char]=1
+        
+#         max_freq=max(cf,key=cf.get)
+    
+
+#     return max_freq
+
+# t=input("Enter the text: ")
+
+# d=freq_char(t)
+
+# print("the character that occurs most is  ",d)
+
+# from collections import Counter
+
+# def cf(text):
+#     chf={}
+
+#     frq=Counter(text)
+#     max_frq=max(frq,frq.get)
+    
+#     return chf,max_frq
+
+# import string 
+
+# def is_pangram(sentence):
+
+#     sentence=sentence.lower().replace(" ","")
+
+#     aplhabet_in_sentence=set(sentence)
+
+#     all_alphabet=set(string.ascii_lowercase)
+
+#     return all_alphabet.issubset(aplhabet_in_sentence)
+
+# t=input("Enter the sentence: ")
+
+# if is_pangram(t):
+#     print("Is pangram ")
+
+
+
+# def count_digi_alphabet(text):
+#     digit=sum(x.isdigit() for x in text)
+#     alph=sum(x.isalpha() for x in text)
+
+#     return digit,alph
+
+
+
+# s=input("enter a string: ")
+# print(count_digi_alphabet(s))
+
+
