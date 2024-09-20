@@ -416,3 +416,85 @@
 # print(count_digi_alphabet(s))
 
 
+# Program to count the number of lines, words, characters, alphabets, and digits in a file:
+
+# import re
+
+# def count_all(file):
+#     with open(file,'r') as f:
+#         text=f.read()
+
+#     lines=re.split(r'[.!?]',text)
+
+#     words=text.split()
+#     char=len(text)
+#     a=sum(x.isalpha() for x in text)
+#     d=sum(x.isdigit() for x in text)
+
+#     return len(lines),len(words),char,a,d
+
+
+# filep=input("Enter file path: ")
+
+# print(count_all(filep))
+
+
+# 1. Program to count each character in a text and find the character with the maximum occurrences:
+
+
+# def char_count(text):
+#     cf={}
+#     for char in text:
+#         if char in cf:
+#             cf[char]+=1
+#         else:
+#             cf[char]=1
+
+#     max_occ=max(cf,key=cf.get)
+
+#     return cf,max_occ
+
+# s=input("Enter a stirng: ")
+
+# d,c=char_count(s)
+
+# print("Char counts: ")
+# for char,count in d.items():
+#     print(f"{char} : {count} ")
+
+# print(f"The max char count char is : {c}")
+
+# def create_subset(uset):
+#     sorted_list=sorted(uset)
+#     hf=len(sorted_list)//2
+
+#     s1=set(sorted_list[:hf])
+#     s2=set(sorted_list[hf:])
+
+#     return s1,s2
+
+
+# ui=input("Enter the elements: ")
+
+# us={x for x in ui.split()}
+
+# if len(ui)%2==0:
+#     print("Not even entry ")
+# else:
+#     s1,s2=create_subset(us)
+#     print(s1,s2)
+
+# def read_and_merge(f1,f2,final):
+#     with open(f1,'r') as f1:
+#         content=f1.read()
+
+#     with open(f2,'r') as f2:
+#         content2=f2.read()
+
+#     hf1=len(content)//2
+#     hf2=len(content2)//2
+#     with open(final,'w') as f:
+#         f.write(content[:hf1])
+#         f.write(content[hf2:])
+
+
