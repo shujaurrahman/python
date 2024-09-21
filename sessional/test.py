@@ -498,3 +498,12 @@
 #         f.write(content[hf2:])
 
 
+# def sp_list(list):
+#     strng=[x for x in list if isinstance(x,str)]
+#     intr=[x for x in list if isinstance(x,int)]
+#     return strng,intr
+
+# mixed=["shuja",43,"ashif",89]
+# s,i=sp_list(mixed)
+
+# print(s,i)
