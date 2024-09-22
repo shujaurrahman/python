@@ -507,3 +507,14 @@
 # s,i=sp_list(mixed)
 
 # print(s,i)
+
+
+# def snd_l(lstt):
+#     lst=list(set(lstt))
+#     lst.sort()
+#     sle=lst[-2]
+#     i=[i for i, x in enumerate(lst) if x==sle]
+#     return sle,i
+# x=[2,5,6,9,20,10,3,3,4,5]
+# s,i=snd_l(x)
+# print(s,i)
