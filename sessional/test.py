@@ -527,3 +527,14 @@
 # x=["shuja","aqsa","ammi"]
 
 # print(sort_len(x))
+
+
+# repeared items
+
+def repeated(lst):
+    r=set([x for x in lst if lst.count(x)>1])
+    return r
+
+x=[1,1,1,2,2,2,4,5,5,6]
+
+print(repeated(x))
