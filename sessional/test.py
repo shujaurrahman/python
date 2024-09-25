@@ -531,10 +531,32 @@
 
 # repeared items
 
-def repeated(lst):
-    r=set([x for x in lst if lst.count(x)>1])
-    return r
+# def repeated(lst):
+#     r=set([x for x in lst if lst.count(x)>1])
+#     return r
 
-x=[1,1,1,2,2,2,4,5,5,6]
+# x=[1,1,1,2,2,2,4,5,5,6]
 
-print(repeated(x))
+# print(repeated(x))
+
+
+# len of words
+
+# def count_words(stng):
+#     words=stng.split()
+#     return len(words)
+
+# x="shuja ia a good bou"
+
+# print(count_words(x))
+
+# from collections import Counter
+
+# def count_words(line):
+#     words=line.split()
+#     f=Counter(words)
+#     return max(f,key=f.get)
+
+# x="shuja shuja is a good boy"
+# print(count_words(x))
+
