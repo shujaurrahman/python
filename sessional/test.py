@@ -560,3 +560,14 @@
 # x="shuja shuja is a good boy"
 # print(count_words(x))
 
+# pangram 
+
+# import string
+# def pangram(line):
+#     a_s=set(line.lower())
+#     all_s=set(string.ascii_lowercase)
+#     return all_s<=a_s
+
+# x="this is not pangmra"
+# print(pangram(x))
+
