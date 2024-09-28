@@ -571,3 +571,13 @@
 # x="this is not pangmra"
 # print(pangram(x))
 
+# sessional paper question
+# with open("sessional/1.txt",'r') as fa:
+#     content1=fa.readlines()
+#     oddline=(len(content1))//2
+# with open("sessional/2.txt",'r') as f:
+#     content2=f.readlines()
+#     content2[-1]=content1[oddline]
+#     print(content2)
+# with open("sessional/2.txt",'w') as fb:
+#     fb.writelines(content2)
